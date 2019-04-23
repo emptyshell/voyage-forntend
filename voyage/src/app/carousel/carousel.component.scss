@@ -70,24 +70,8 @@ swiper {
       border-color: $emerald;
     }
 
-    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-      background-image: url("/assets/prev.png");
-      left: 10px;
-      right: auto;
 
-      :hover {
-        background-image: url("/assets/prev_hover.png");
-      }
-    }
-    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-      background-image: url("/assets/next.png");
-      right: 10px;
-      left: auto;
 
-      :hover {
-        background-image: url("/assets/next_hover.png");
-      }
-    }
 
       @media only screen and (max-width: 820px) {
         .banner-lg-text {
@@ -121,3 +105,27 @@ swiper {
         }
       }
 }
+
+::ng-deep .swiper-button-prev {
+  background-image: url("/assets/prev.png") !important;
+  width: 80px !important;
+  height: 80px !important;
+  background-size: 80px 80px !important;
+  left: 0 !important;
+}
+
+::ng-deep .swiper-button-prev:hover {
+    background-image: url("/assets/prev_hover.png") !important;
+}
+
+::ng-deep .swiper-button-next {
+  background-image: url("/assets/next.png") !important;
+  width: 80px !important;
+  height: 80px !important;
+  background-size: 80px 80px !important;
+  right: 0 !important;
+}
+
+::ng-deep .swiper-button-next:hover {
+    background-image: url("/assets/next_hover.png") !important;
+  }
