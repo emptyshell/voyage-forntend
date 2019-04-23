@@ -1,0 +1,44 @@
+@import "../colors.scss";
+@import "../font.scss";
+//all color are defined in colors.scss
+//all font propreties are in font.scss
+
+
+//navigation bar styles
+.navbar {
+  color: white;
+  min-height: 100px;
+
+  //brand styles
+  .navbar-brand {
+    text-transform: uppercase;
+    color: $darkblue;
+    font-size: $brand-size;
+    font-weight: bold;
+  }
+  //emerald color highlight
+  .emerald-highlight {
+    color: $emerald;
+  }
+
+ .active {
+   .nav-link {
+     color: $emerald !important;
+   }
+  }
+
+  .navbar-nav {
+    padding-left: 30%;
+    text-transform: uppercase;
+    color: $lightblue;
+
+    :hover {
+      color: $emerald;
+    }
+
+    .nav-item {
+      padding-left: 15px;
+      font-weight: 600;
+    }
+  }
+}

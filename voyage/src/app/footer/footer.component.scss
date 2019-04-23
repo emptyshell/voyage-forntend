@@ -1,0 +1,92 @@
+@import "../colors.scss";
+@import "../font.scss";
+//all color are defined in colors.scss
+//all font propreties are in font.scss
+
+.footer {
+  background-color: $darkblue;
+  padding-top: 62px;
+  padding-bottom: 50px;
+
+  .col {
+    max-width: 300px;
+    min-width: 200px;
+
+    .footer-header {
+      color: $emerald;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      color: white;
+      font-size: 13px;
+      padding: 19px 60px 0 0;
+
+    }
+
+    .form-control {
+      width: 149px;
+      height: 33px;
+      border-radius: 0;
+      border-color: white;
+    }
+
+    .go-btn {
+      background-color: $emerald;
+      color: white;
+      font-weight: bold;
+      width: 49px;
+      height: 33px;
+      margin-left: 6px;
+    }
+
+    .news-thumnail {
+      width: 34px;
+      height: 34px;
+      border: 1px solid white;
+      padding: 5px;
+      margin-top: 23px;
+    }
+
+    .news-title {
+      margin: 0;
+    }
+
+    .news-date {
+      color: $emerald;
+      padding: 0;
+    }
+
+    .tags {
+      text-align: left;
+
+      .tag {
+        display: inline-block;
+        height: 27px;
+        color: white;
+        font-size: 13px;
+        padding:  3px 6px ;
+        border: 1px solid white;
+        margin-right: 7px;
+        margin-top: 7px;
+      }
+    }
+
+    .address {
+      padding-right: 40px;
+    }
+
+    .email {
+      padding: 0;
+    }
+
+    .email-highlight {
+      color: $emerald;
+    }
+
+    .social-item {
+      margin: 10px;
+    }
+  }
+}

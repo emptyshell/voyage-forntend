@@ -1,0 +1,125 @@
+@import "../colors.scss";
+@import "../font.scss";
+//all color are defined in colors.scss
+//all font propreties are in font.scss
+.bg-ligthblue {
+  background-color: $lightblue;
+}
+
+.centered-text {
+    text-align:center
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 104px;
+  background-color:  $lightblue;
+  position: relative;
+
+  .navbar-brand {
+    color: white;
+    font-size: 20pt;
+    text-align: left;
+    line-height: 24px;
+
+    .thin-txt {
+      color: $aqua;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
+
+  .separator {
+    padding-left: 36px;
+    padding-right: 11px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    .separator {
+      display: none;
+    }
+
+    .calendar {
+      width: 40px !important;
+    }
+  }
+
+  @media only screen and (min-width: 321px) and (max-width: 1200px) {
+    .separator {
+      padding-left: 5px;
+    }
+
+    #inlineFormInput,.form-control {
+      width: 300px;
+    }
+
+    #inlineFormInput {
+      margin-left: 0 !important;
+    }
+
+    .form-control {
+      margin-left: 5px !important;
+    }
+
+    .calendar {
+      width: 53px !important;
+    }
+  }
+
+  .lightblue-label {
+    padding: 0 20px 0 20px;
+    color: $aqua;
+    font-size: 18px;
+  }
+
+  #inlineFormInput,.form-control {
+    max-width: 290px;
+    border-radius: 0;
+    height: 49px;
+    border-right: 0;
+    margin: 0;
+    margin-top: 10px;
+    border-color: white;
+  }
+
+  .input-icon-wrapper,.calendar {
+    margin-top: 10px;
+    background-color: white;
+    height: 49px;
+    border-radius: 0;
+    border: 1px;
+    padding: 0;
+  }
+
+  .input-icon {
+    margin: 14px;
+  }
+
+  .search-btn {
+    width: 108px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 10px;
+    color: white;
+    background-color: $emerald;
+  }
+
+}
